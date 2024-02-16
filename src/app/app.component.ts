@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, SimpleChanges } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'github-profile-vofile-viewer';
+  constructor(private router: Router){};
+  title = 'github-profile-viewer';
+  showGoBack = false;
+  handleGoTOSearch(){
+    this.router.navigate([''])
+  }
 }

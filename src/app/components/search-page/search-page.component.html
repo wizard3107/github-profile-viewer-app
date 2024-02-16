@@ -1,0 +1,17 @@
+<div class="homeWrapper">
+  <img
+        src="../../../assets/mainBackground.jpg"
+        alt=""
+        width="300"
+        height="300"
+        class="mainLogoStyling"
+      />
+  <div class="contentDiv">
+    <h2 class="subHeaderStyling">
+      Discover GitHub Profiles Easily
+    </h2>
+    <div class="searchDiv">
+      <app-search-box width="100%" [hint]="hint" [icon]="icon" [label]="label"
+        (searchHanlder)="searchHandler($event)"></app-search-box>
+    </div>
+  </div>

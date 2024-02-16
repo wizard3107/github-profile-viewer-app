@@ -1,0 +1,38 @@
+.repo-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    justify-content: baseline;
+    height: 90%;
+    overflow-y: auto;
+}
+
+.repo-list-wrapper {
+    height: 94%;
+    overflow: hidden;
+}
+@media screen and (max-width: 1250px) {
+    .repo-card-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        /* Change to 3 columns for tablet */
+    }
+}
+@media screen and (max-width: 984px) {
+    .repo-card-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        /* Change to 3 columns for tablet */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .repo-card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        /* Change to 2 columns for mobile */
+    }
+}
+@media screen and (max-width: 496px) {
+    .repo-card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        /* Change to 2 columns for mobile */
+    }
+}

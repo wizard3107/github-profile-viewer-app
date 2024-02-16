@@ -1,0 +1,35 @@
+/* Generic Styling */
+@mixin columnRowFlexStyling {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.coilumn-flex-styling {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stat-card-wrapper{
+  display: flex;
+  flex-direction: row;
+  gap: 1em
+}
+/* Updated Styling for .stat-cards-div */
+.stat-cards-div {
+  @include columnRowFlexStyling; /* Apply the mixin for flex row */
+  flex-wrap: wrap; /* Ensure flex items wrap to the next row */
+  gap: 1em; /* Set the gap between items */
+  width: 250px;
+}
+@media screen and (min-width: 768px) {
+  .stat-cards-div {
+    flex-direction: column;
+    align-items: center; 
+  }
+}
+
+

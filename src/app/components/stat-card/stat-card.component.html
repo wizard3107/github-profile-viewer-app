@@ -1,0 +1,8 @@
+
+<div class="statCardStyling" [ngClass]="{'pointer': cardData.statName === 'Repos'}" (click)="navigateTo(cardData.statName)">
+    <img
+      src="{{cardData.icon}}"
+    />
+    <h1>{{cardData.statName | uppercase}}</h1>
+    <h2>{{cardData.statCount}}</h2>
+  </div>

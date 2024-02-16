@@ -1,0 +1,60 @@
+<div class="page-wrapper">
+    <div class="user-info-wrapper">
+        <div class="user-top-div">
+          <img [src]="userDetails.avatar_url" [alt]="userDetails.name" width="200" height="200" />
+          <div class="user-top-info-div">
+            <h1>{{ userDetails.name }}</h1>
+            <h4 *ngIf="userDetails.login">@{{ userDetails.login }}</h4>
+            <p class="hireable-styling">
+              {{ userDetails.hireable ? 'Available for Hire' : 'Not Available for Hire' }}
+            </p>
+            <p class="joined-at-styling">
+              Joined At: <span>{{ userDetails.created_at | date: 'mediumDate' }}</span>
+            </p>
+          </div>
+        </div>
+        <div class="user-details-div">
+          <div *ngIf="userDetails.location" class="icon-text-div">
+            <img src="../../../assets/location.svg" [style.color]="'#0079ff'"/>
+            <p>{{ userDetails.location }}</p>
+          </div>
+          <p *ngIf="userDetails.bio">{{ userDetails.bio }}</p>
+          <p *ngIf="userDetails.company">Company: {{ userDetails.company }}</p>
+          <div class="icon-text-div" *ngIf="userDetails.updated_at">
+            <img src="../../../assets/clock.svg" [style.color]="'#0079ff'"/>
+            <p>Last Updated: {{ userDetails.updated_at | date: 'medium' }}</p>
+          </div>
+          <div class="coilumn-flex-styling">
+            <h4>Follow on</h4>
+            <div class="icon-col-div">
+              <div *ngIf="userDetails.twitter_username" class="icon-col-div">
+                <img src="../../../assets/twitter.svg" />
+                <p>{{ userDetails.twitter_username }}</p>
+              </div>
+              <div *ngIf="userDetails.email" class="icon-col-div">
+                <img src="../../../assets/email.svg"/>
+                <p>{{ userDetails.email }}</p>
+              </div>
+            </div>
+            <div class="icon-col-div">
+              <div *ngIf="userDetails.html_url" class="icon-col-div">
+                <a [href]="userDetails.html_url" target="_blank" rel="noreferrer">
+                <img src="../../../assets/github.svg"/>
+                  
+                </a>
+              </div>
+              <div *ngIf="userDetails.blog" class="icon-col-div">
+                <a [href]="userDetails.blog" target="_blank" rel="noreferrer">
+                    <img src="../../../assets/blog.svg"/>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="user-info-wrapper">
+      <app-user-stats [userStats]="userStats" [userName]="userDetails.login" />
+    </div>
+</div>
+
+  

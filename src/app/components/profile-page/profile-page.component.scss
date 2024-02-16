@@ -1,0 +1,120 @@
+
+.page-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+    height: 100%;
+  }
+  .page-wrapper > * {
+    flex-grow: 1; /* Make the children occupy equal space */
+    flex-basis: 0; /* Distribute remaining space equally */
+  }
+  
+  @media (max-width: 800px) {
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  }
+/* Generic Styling*/
+.rowFlexStyling {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .coilumn-flex-styling {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  /* User Styling*/
+  .user-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 2em;
+    padding: 2em;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    flex: 1;
+    background-color: #fff;
+    border-radius: 0.5em;
+    box-shadow: 0px 4px 20px 8px rgba(120, 123, 126, 0.548);
+  }
+  
+  .user-top-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5em;
+  }
+  
+  .user-top-div img {
+    border-radius: 50%;
+    border: 2px solid gray;  }
+  
+  .user-top-info-div,
+  .user-details-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  
+  .user-top-info-div h1,
+  .user-top-info-div h4 {
+    font-family: "Calistoga", cursive;
+    letter-spacing: 0.04em;
+  }
+  
+  .user-top-info-div .hireable-styling {
+    color: #0079ff;
+    background-color: #b6d7ff;
+    padding: 0.25em;
+    border-radius: 5px;
+  }
+  
+  .user-top-info-div p,
+  .user-info-wrapper .user-details-div p {
+    font-family: "Lora", serif;
+    font-size: 1em;
+  }
+  
+  .user-top-info-div .joined-at-styling span {
+    border-bottom: 2px solid #0079ff;
+    padding: 0em 0.25em;
+  }
+  
+  .icon-text-div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-family: "Lora", serif;
+    font-size: 1em;
+    font-weight: bolder;
+    gap: 0.5em;
+  }
+  
+  .icon-col-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Lora", serif;
+    font-size: 1em;
+    font-weight: bolder;
+    gap: 0.5em;
+    padding-top: 0.5em;
+  }

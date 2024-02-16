@@ -1,0 +1,15 @@
+<mat-form-field appearance="outline" class="search-box">
+    <mat-label>{{label}}</mat-label>
+    <input matInput placeholder="Github Profile" (change)="handleOnChange($event)" />
+    <mat-icon matSuffix>{{icon}}</mat-icon>
+    <mat-hint>{{hint}}</mat-hint>
+</mat-form-field>
+
+<!-- <div class="searchBoxWrapper">
+    <input
+      type="text"
+      class="searchInputStyling"
+      placeholder="placeholder"
+      (Change)="handleOnChange($event)"
+    />
+  </div> -->

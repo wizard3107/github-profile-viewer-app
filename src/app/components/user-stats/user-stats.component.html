@@ -1,0 +1,8 @@
+<div class="user-stats-wrapper">
+    <div  class="stat-card-wrapper">
+      <div *ngFor="let data of userStats" class="stat-cards-div">
+        <app-stat-card [cardData]="data" [userName]="userName"/>
+      </div>
+    </div>
+</div>
+  

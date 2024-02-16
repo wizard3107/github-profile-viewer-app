@@ -1,27 +1,36 @@
-# GithubProfileVofileViewer
+## Angular GitHub User Profile App
+This is an Angular application that allows users to view GitHub user profiles and their repositories. It leverages Angular Material for UI components to provide a user-friendly interface.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
+## Features
 
-## Development server
+## Profile Page: Display basic user information such as name, avatar, bio, and number of repositories.
+## Repository List: Fetch and display a list of the user's GitHub repositories with pagination support.
+## Responsive UI: Utilize Angular Material for responsive and professional-looking UI components.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technical Requirements
+## Angular: Built using the latest version of Angular.
+## GitHub API Integration: Utilize GitHub API to fetch user and repository data.
+## Pagination: Implement pagination for the repository list.
+## Code Quality: Ensure clean, modular, and reusable code with proper commenting and documentation.
 
-## Code scaffolding
+## Setup
+## Clone the repository:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+git clone https://github.com/your-username/angular-github-profile-app.git
 
-## Build
+## Navigate to the project directory:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+cd angular-github-profile-app
+     
+## Install dependencies:
 
-## Running unit tests
+npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Run the development server:
 
-## Running end-to-end tests
+npm start
+Open your browser and navigate to http://localhost:4200 to view the application.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Usage
+Enter a GitHub username in the search bar to view the corresponding user profile and repositories.
+Click on a repository card to view detailed information about the repository.
