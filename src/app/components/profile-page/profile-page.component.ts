@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { GithubService } from 'src/app/services/github.service';
 import { GitHubUser } from '../interface';
 import { userInfo } from '../user-stats/user-stats.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile-page',
@@ -9,7 +10,7 @@ import { userInfo } from '../user-stats/user-stats.component';
   styleUrls: ['./profile-page.component.scss']
 })
 export class ProfilePageComponent implements OnInit {
-  constructor(private githubService: GithubService) { }
+  constructor(private githubService: GithubService, private router: Router) { }
   ngOnInit(): void {
     const urlParams = new URLSearchParams(window.location.search);
 
@@ -79,6 +80,7 @@ export class ProfilePageComponent implements OnInit {
     },
     (error) => {
       // Handle error
+      this.router.navigate(['error'])
       console.error('Error fetching user data:', error);
     }) 
   }
