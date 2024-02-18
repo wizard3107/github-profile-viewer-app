@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfilePageComponent } from './components/profile-page/profile-page.component';
 import { RepositoryListPageComponent } from './components/repository-list-page/repository-list-page.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -33,7 +33,7 @@ import { LoaderComponent } from './atoms/loader/loader.component';
         BrowserModule,
         AppRoutingModule,
         CommonModule,
-        NoopAnimationsModule,
+        BrowserAnimationsModule,
         MatSlideToggleModule,
         SearchBoxComponent,
         HttpClientModule,
