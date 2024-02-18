@@ -1,4 +1,4 @@
-<div class="page-wrapper">
+<div class="page-wrapper" *ngIf="!isLoading">
     <div class="user-info-wrapper">
         <div class="user-top-div">
           <img [src]="userDetails.avatar_url" [alt]="userDetails.name" width="200" height="200" />
@@ -56,5 +56,6 @@
       <app-user-stats [userStats]="userStats" [userName]="userDetails.login" />
     </div>
 </div>
+<app-loader *ngIf="isLoading">
 
   

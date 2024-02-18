@@ -16,6 +16,7 @@ import { StatCardComponent } from './components/stat-card/stat-card.component';
 import { PaginationComponentComponent } from './atoms/pagination-component/pagination-component.component';
 import { RepoCardComponent } from './atoms/repo-card/repo-card.component';
 import { CommonModule } from '@angular/common';
+import { LoaderComponent } from './atoms/loader/loader.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -38,6 +39,7 @@ import { CommonModule } from '@angular/common';
         HttpClientModule,
         PaginationComponentComponent,
         RepoCardComponent,
+        LoaderComponent
     ]
 })
 export class AppModule { }

@@ -18,6 +18,7 @@ export class ProfilePageComponent implements OnInit {
     const user = urlParams.get('user');
     this.getUserDetails(user ?? "");
   }
+  isLoading: boolean = true;
   userDetails:GitHubUser = {
     avatar_url: "",
     bio: "",
@@ -55,7 +56,7 @@ export class ProfilePageComponent implements OnInit {
   userStats: userInfo[] = [];
   getUserDetails(user:string){
     this.githubService.getUser(user).subscribe((user) => {
-      // Handle successful response
+      // Handle successful response 
       this.userDetails = user;
       this.userStats = [
         {
@@ -77,6 +78,7 @@ export class ProfilePageComponent implements OnInit {
           icon:"../../../assets/repoIcon.svg"
         }
       ];
+      this.isLoading = false;
     },
     (error) => {
       // Handle error
