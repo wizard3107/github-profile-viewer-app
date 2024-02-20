@@ -53,7 +53,7 @@
         </div>
     </div>
     <div class="user-info-wrapper">
-      <app-user-stats [userStats]="userStats" [userName]="userDetails.login" />
+      <app-user-stats class="user-stats" [userStats]="userStats" [userName]="userDetails.login" />
     </div>
 </div>
 <app-loader *ngIf="isLoading">

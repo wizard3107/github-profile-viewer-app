@@ -5,6 +5,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .coilumn-flex-styling {
   display: flex;
   flex-direction: row;
@@ -12,24 +13,13 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.stat-card-wrapper{
+.user-stats-wrapper{
+  width: 100%;
+}
+.stat-card-wrapper {
+  width: 80%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column; 
+  justify-content: space-between;
   gap: 1em
 }
-/* Updated Styling for .stat-cards-div */
-.stat-cards-div {
-  @include columnRowFlexStyling; /* Apply the mixin for flex row */
-  flex-wrap: wrap; /* Ensure flex items wrap to the next row */
-  gap: 1em; /* Set the gap between items */
-  width: 250px;
-}
-@media screen and (min-width: 768px) {
-  .stat-cards-div {
-    flex-direction: column;
-    align-items: center; 
-  }
-}
-
-

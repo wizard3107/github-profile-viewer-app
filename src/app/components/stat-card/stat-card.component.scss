@@ -1,30 +1,30 @@
-.statCardStyling {
+.stat-card {
   display: flex; /* Use flexbox to ensure it stretches horizontally */
-  flex-direction: column; /* Arrange items vertically */
+  flex-direction: row; /* Arrange items vertically */
   align-items: center; /* Center-align items horizontally */
-  justify-content: center; /* Center-align items vertically */
+  justify-content: space-between; /* Center-align items vertically */
   padding: 1em; /* Add padding for spacing */
-  border: 1px solid #ccc; /* Add a border for visual separation */
+  box-shadow: 0px 4px 20px 8px rgba(120, 123, 126, 0.548);
   border-radius: 10px; /* Add rounded corners */
-  min-width: 150px; /* Ensure it occupies 100% width */
+  min-width: 100%; /* Ensure it occupies 100% width */
   box-sizing: border-box; /* Include padding and border in the width calculation */
 }
 .pointer{
   cursor: pointer; /* Show cursor pointer on hover */
 }
 
-.statCardStyling img {
+.stat-card img {
   width: 50px; /* Adjust image width */
   height: 50px; /* Adjust image height */
   margin-bottom: 0.5em; /* Add space below the image */
 }
 
-.statCardStyling h1 {
+.stat-card h1 {
   font-size: 1.2em; /* Adjust font size for stat name */
   margin: 0.5em 0; /* Add margin for spacing */
 }
 
-.statCardStyling h2 {
+.stat-card h2 {
   font-size: 1.5em; /* Adjust font size for stat count */
   margin: 0; /* Remove margin to avoid extra spacing */
 }
