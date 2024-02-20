@@ -35,6 +35,33 @@ npm install
 
 npm start
 Open your browser and navigate to http://localhost:4200 to view the application.
+## Project structure:
+angular-github-profile-viewer/
+├── src/
+
+│   ├── app/
+
+│   │   ├── components/            # Angular components
+
+│   │   ├── services/              # Angular services
+
+│   │   ├── models/                # Interfaces and models
+
+│   │   ├── assets/                # Static assets
+
+│   │   ├── app-routing.module.ts  # Angular routing module
+
+│   │   └── app.module.ts          # Angular root module
+
+│   ├── environments/              # Environment configuration
+
+│   └── index.html                 # Main HTML file
+
+├── .angular.json                  # Angular project configuration
+
+├── package.json                   # NPM dependencies and scripts
+
+└── README.md                      # Project documentation
 
 ## Usage
 Enter a GitHub username in the search bar to view the corresponding user profile and repositories.
